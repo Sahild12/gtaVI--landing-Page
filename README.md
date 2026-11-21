@@ -2,7 +2,7 @@
 
 A cinematic, fully responsive landing page inspired by Rockstar Games' *Grand Theft Auto VI*, built with TypeScript and Vite.
 
-🔗 **Live Demo:** https://gta-real16.vercel.app/
+🔗 **Live Demo:** [https://gta-real16.vercel.app/](https://gta-vi-landing-page-blue.vercel.app/)
 
 ## ✨ Features
 
