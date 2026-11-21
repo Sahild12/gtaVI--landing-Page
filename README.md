@@ -1,78 +1,91 @@
-# React + TypeScript + Vite
+# 🎮 GTA VI Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cinematic, fully responsive landing page inspired by Rockstar Games' *Grand Theft Auto VI*, built with TypeScript and Vite.
 
-Currently, two official plugins are available:
+![Hero Section](public/readme/hero.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Live Demo:** https://gta-real16.vercel.app/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Immersive hero section with bold GTA VI artwork and a "Watch Trailer" call-to-action
+- Smooth animations and transitions ⚠️
+- Video sections for a cinematic, game-launch feel
+- Custom fonts and a typography style that matches the franchise
+- Fully responsive layout for desktop, tablet and mobile
+- Type-safe codebase with TypeScript and ESLint
+- Deployed on Vercel
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+| Tool | Purpose |
+|------|---------|
+| TypeScript | Type-safe development |
+| Vite | Fast dev server and bundler |
+| React ⚠️ | Component-based UI |
+| Tailwind CSS ⚠️ | Styling and responsive design |
+| GSAP ⚠️ | Animations |
+| ESLint | Code quality |
+| Vercel | Deployment |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Prerequisites:** Node.js 18+ and npm
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```bash
+# Clone the repository
+git clone https://github.com/Sahild12/gtaVI--landing-Page.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Go to the project folder
+cd gtaVI--landing-Page
 
+# Install dependencies
+npm install
+
+# Start the dev server (http://localhost:5173)
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
 
 ```
+gta-landing-page/
+├── constants/        # Shared data and configuration (index.ts)
+├── public/
+│   ├── fonts/        # Custom fonts
+│   ├── images/       # Image assets
+│   ├── videos/       # Video assets
+│   └── readme/       # README screenshots
+├── src/              # Application source code and styles
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
+```
+
+## 📱 Responsive Design
+
+The layout adapts across screen sizes, with mobile-specific styling so the hero artwork, typography and trailer button stay clean on smaller devices.
+
+## 📚 What I Learned
+
+- Structuring a TypeScript + Vite project for scalability
+- Building responsive layouts for media-heavy pages
+- Handling video and image assets without hurting performance
+- Deploying and shipping a production site with Vercel
+
+## 🙏 Credits
+
+- Design inspired by the official GTA VI website by Rockstar Games
+- ⚠️ [Add tutorial or resource credit here if you followed one]
+
+## 📄 Disclaimer
+
+This is a fan-made educational project and is not affiliated with Rockstar Games or Take-Two Interactive. All GTA VI artwork and trademarks belong to their respective owners.
+
+## 👤 Author
+
+**Sahil** · [GitHub](https://github.com/Sahild12) · [LinkedIn](https://www.linkedin.com/in/your-profile)
